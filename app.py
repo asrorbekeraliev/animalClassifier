@@ -4,7 +4,8 @@ import plotly.express as px
 import platform
 
 import pathlib
-temp = pathlib.PosixPath
+plt = platform.system()
+if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 
 #title
 st.title('Animal classifier')
