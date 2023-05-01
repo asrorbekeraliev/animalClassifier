@@ -8,6 +8,7 @@ pathlib.PosixPath = pathlib.WindowsPath
 plt = platform.system()
 if plt=='Linux':
     pathlib.WindowsPath = pathlib.PosixPath
+    pathlib.PosixPath = pathlib.LinuxPath
 
 #title
 st.title('Animal classifier')
